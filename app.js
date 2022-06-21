@@ -78,3 +78,10 @@ function populatePeople(names) {
 const people = ["Frank Peterson", "Suzy Degual", "Liza Jones"];
 console.log(populatePeople(people));
 
+function print(name, age, ...likes){
+const string = likes.join(", and ")
+console.log("My name is " + name + " and I'm " + age + " and I like " + string)
+}
+
+print("Joe", 22, "animals", "cake", "coding")
+// "My name is Joe and I'm 22 and I like animals, and cake, and coding"
